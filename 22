@@ -1,0 +1,75 @@
+#define red 9
+
+#define green 10
+
+#define blue 11
+
+void setup()
+
+{
+
+}
+
+pinMode (red, OUTPUT);
+
+//pin 9 sebagai output merah
+
+pinMode (green, OUTPUT);
+
+//pin 10 sebagai output hijau
+
+pinMode (blue, OUTPUT);
+
+//pin 11 sebagai output biru
+
+void loop()
+
+{ digitalWrite(red, HIGH);
+
+//Hanya RGB Red Nyala
+
+digitalWrite(green, LOW);
+
+//--
+
+digitalWrite(blue, LOW);
+
+//--
+
+delay(1000);
+
+//tunggu 1 detik
+
+digitalWrite(red, LOW);
+
+//--
+
+digitalWrite (green, HIGH);
+
+//Hanya RGB Green Nyala
+
+digitalWrite(blue, LOW);
+
+//--
+
+delay(1000);
+
+//tunggu 1 detik
+
+digitalWrite(red, LOW);
+
+//--
+
+digitalWrite (green, LOW);
+
+//--
+
+digitalWrite(blue, HIGH);
+
+//Hanya RGB Blue Nyala
+
+delay(1000);
+
+//tunggu 1 detik
+
+}
