@@ -1,0 +1,61 @@
+//NAMA: WAHYU FIRMANSYAH
+
+//KELAS: XII IPA 5
+
+#define potensio AO
+
+#define red 12
+
+#define green 7
+
+int nilai; //menampung nilai
+
+void setup()
+
+{ Serial.begin(9600);
+
+}
+
+//Serial 9600
+
+pinMode (red, OUTPUT);
+
+//Red OUTPUT
+
+pinMode (green,
+
+OUTPUT);//Green OUTPUT
+
+void loop()
+
+{ nilai-analogRead (potensio);
+
+//Membaca Potensio
+
+Serial.println(nilai);
+
+//Menampilkan Serial
+
+if (nilai>500) {
+
+}
+
+digitalWrite(red, HIGH);
+
+//Red Nyala
+
+digitalWrite (green, LOW);
+
+//Green Mati
+
+else {
+
+digitalWrite(red, LOW);
+
+//Red Mati
+
+digitalWrite (green,
+
+HIGH);//Green Nyala
+
+}
