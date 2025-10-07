@@ -1,0 +1,45 @@
+//pin led
+
+#define red 12
+
+#define blue 11
+
+void setup()
+
+{//led red dan blue sebagai output
+
+pinMode (red, OUTPUT);
+
+pinMode (blue, OUTPUT);
+
+}
+
+void loop()
+
+{
+
+digitalWrite(red, HIGH);
+
+//red nyala
+
+digitalWrite(blue, HIGH);
+
+//blue nyala
+
+delay(1000);
+
+//tunggu 1 detik
+
+digitalWrite(red, LOW);
+
+//red mati
+
+digitalWrite(blue, LOW);
+
+//blue mati
+
+delay(1000);
+
+//tunggu 1 detik
+
+}
